@@ -1,0 +1,46 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# build outputs
+dist/
+build/
+coverage/
+**/dist/
+**/build/
+
+# env
+.env
+.env.*
+!.env.example
+!.env.demo.example
+!.env.prod.example
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# runtime
+*.pid
+*.seed
+*.pid.lock
+
+# cache
+.ruff_cache/
+
+# hot update bundles (built locally, deployed to server)
+web/api/data/
+
+# python cache
+__pycache__/
+*.pyc
+
+# Capacitor web assets (built at deploy time)
+apps/mobile/ios/App/App/public/

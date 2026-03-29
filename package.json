@@ -1,0 +1,21 @@
+{
+  "name": "health-guardian",
+  "version": "1.0.0",
+  "private": true,
+  "description": "体检后健康管家 - 全栈健康管理平台",
+  "scripts": {
+    "dev": "concurrently \"pnpm --filter @health-guardian/api dev\" \"pnpm --filter @health-guardian/admin dev\"",
+    "dev:api": "pnpm --filter @health-guardian/api dev",
+    "dev:admin": "pnpm --filter @health-guardian/admin dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "clean": "pnpm -r clean"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
